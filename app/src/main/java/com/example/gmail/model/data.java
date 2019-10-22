@@ -1,47 +1,54 @@
 package com.example.gmail.model;
 
 public class data {
-    private int mColor;
-    private String time;
-    private String sentName;
-    private String content;
-    private String viewContent;
-    private  String image;
-    public data (String sentName, String content, String time )
+    public int id;
+    public String name;
+    public String username;
+    public String email;
+    public class  address
     {
-        this.time = time;
-        this.sentName = sentName;
-        this.content = content;
-        this.image = sentName.substring(0,1);
-        if(content.length() > 15)
-          this.viewContent = content.substring(0, 15) + "..." ;
-        else
-            this.viewContent = content;
+        public String street;
+
+        public address(String street, String suite, String city, String zipcode) {
+            this.street = street;
+            this.suite = suite;
+            this.city = city;
+            this.zipcode = zipcode;
+        }
+
+        public String suite;
+        public String city;
+        public String zipcode;
+        public class geo {
+            public double lat;
+            public double lng;
+
+            public geo(double lat, double lng) {
+                this.lat = lat;
+                this.lng = lng;
+            }
+        }
+    };
+    public String phone;
+    public String website;
+    public class company{
+        public company(String name, String catchPhrase, String bs) {
+            this.name = name;
+            this.catchPhrase = catchPhrase;
+            this.bs = bs;
+        }
+
+        public String name;
+        public String catchPhrase;
+        public String bs;
     }
 
-    public String getSentName()
-
-    {
-        return this.sentName;
-    }
-    public String getViewContent()
-
-    {
-        return this.viewContent;
-    }
-    public String getImage()
-
-    {
-        return this.image;
-    }
-    public String getTime()
-
-    {
-        return this.time;
-    }
-    public int getmColor()
-
-    {
-        return this.mColor;
+    public data(int id, String name, String username, String email, String phone, String website) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.phone = phone;
+        this.website = website;
     }
 }

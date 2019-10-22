@@ -8,14 +8,14 @@
 
     <TextView
     android:id="@+id/avatar"
-    android:layout_width="100dp"
-    android:layout_height="100dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
     android:gravity="center"
     android:background="@drawable/avatar"
     android:text="6"
     android:textColor="#fff"
     android:textAppearance="?android:attr/textAppearanceLarge"
-    android:textSize="55sp" />
+    android:textSize="25sp" />
 
     <LinearLayout
         android:layout_marginLeft="20dp"

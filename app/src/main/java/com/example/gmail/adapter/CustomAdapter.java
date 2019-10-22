@@ -42,10 +42,10 @@ public class CustomAdapter extends ArrayAdapter<data>
         TextView time = convertView.findViewById(R.id.time);
         data dataList = arrayData.get(position);
 
-        avatar.setText(dataList.getImage());
-        sentName.setText(dataList.getSentName());
-        content.setText(dataList.getViewContent());
-        time.setText(dataList.getTime());
+//        avatar.setText(dataList.getImage());
+//        sentName.setText(dataList.getSentName());
+//        content.setText(dataList.getViewContent());
+//        time.setText(dataList.getTime());
 
         return convertView;
 
